@@ -3,13 +3,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.example</groupId>
         <artifactId>dubbo-study</artifactId>
+        <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>dubbo-producter</artifactId>
-    <name>dubbo-producter</name>
-    <description>dubbo-producter</description>
+    <groupId>com.ohp</groupId>
+    <artifactId>nacos-cluster</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>nacos-cluster</name>
+    <description>nacos-cluster</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -18,7 +20,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -31,24 +32,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>dubbo-common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>3.0.2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-dependencies-zookeeper</artifactId>
-            <version>3.0.2.1</version>
-            <type>pom</type>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-alibaba-sentinel</artifactId>
-            <version>0.9.0.RELEASE</version>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
 

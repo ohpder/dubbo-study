@@ -1,0 +1,21 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: dubbo-producter
+dubbo:
+  application:
+    name: dubbo-producter
+  registry:
+    address: 192.168.0.9:2181
+    protocol: zookeeper
+    timeout: 10000
+  protocol:
+    name: dubbo
+    port: 28080
+#  config-center:
+#    address: 192.168.0.9:2181
+#    timeout: 10000
+#  metadata-report:
+#    address: 192.168.0.9:2181
+#    timeout: 10000
